@@ -34,7 +34,12 @@ body{
     gap: 1.25rem;
     height:29.5rem;
     animation: appear .2s ease-in-out .3s 1 forwards ;
-
+}
+.card:hover {
+    background-color: #3b3939;
+    cursor: pointer;
+    cursor: hand;
+    color:white
 }
 
  /* Media query for iPads */
