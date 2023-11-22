@@ -5,10 +5,11 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    background: #36d1dc; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #36d1dc, #5b86e5); /* Chrome 10-25, Safari 5.1-6 */
+    background: #36d1dc; 
+    background: -webkit-linear-gradient(to right, #36d1dc, #5b86e5); 
     background: linear-gradient(to right, #36d1dc, #5b86e5);  
 }
+
 .profile-container {
     padding-top:5rem;
     display: flex;
@@ -16,20 +17,20 @@ body{
     justify-content: center;
     align-items: center;
     width: 100vw;   
-    gap: 2.5rem;
-     
+    gap: 2.5rem; 
 }
 .card {
     background-color: rgb(250, 248, 233);
     display: flex;
     flex-direction: column ;
     width: 17.5rem; 
-    /* justify-content: center; */
+    justify-content: space-between;
     align-items: center;
     transform: scale(0);
-    padding:1.7rem 1rem;
+    padding:2rem 1.7rem;
     border: solid 2px black;
     border-radius: 1.25rem;
+    -webkit-border-radius: 1.25rem;
     gap: 1.25rem;
     height:29.5rem;
     animation: appear .2s ease-in-out .3s 1 forwards ;
@@ -43,6 +44,7 @@ body{
         flex-wrap: wrap;  
     }
   }
+ /* Media query for iPads above */
 @media only screen and (min-width: 1025px)  {  
     .profile-container { 
         flex-direction: row;
@@ -61,12 +63,13 @@ h3 {
     font-weight: 400;
 }
 .address_div{
-    /* text-align: center; */
+    text-align: center;
     display: flex;
     flex-direction: column ;
     justify-items: center;
     align-items: center;
     gap: .3rem;
+    
 }
 p{
     font-weight: 300;
