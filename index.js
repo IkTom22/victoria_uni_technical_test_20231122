@@ -12,10 +12,10 @@ const data = fetch(dataUrl)
 
 const profileContainer= document.getElementById('profilContainer')
 function createProfileCard(profile){
-    const{picture, location, phone, name } = profile
+    const{picture, location, phone, name, id } = profile
     const card = document.createElement('div')
     card.classList.add("card")
-    card.setAttribute('key', `${name.first} ${name.last}`)
+    card.setAttribute('key', id.value)
     profileContainer.appendChild(card)
     const image = picture.large
     const fullName = `${name.first} ${name.last}`
